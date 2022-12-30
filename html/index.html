@@ -4,15 +4,32 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
         <title>Teste</title>
     </head>
     <body>
-        <form>
-            <input type="text" name="valor_digitado" id="valor_digitado">
-            <button type="submit" value="Enviar" onclick="receberDado()">Enviar</button>
-        </form>
+        <nav>
+            <ul id="lista_nav">
+                <li><a href="#"target="_blank">Home</a></li>
+                <li><a href="#"target="_blank">####</a></li>
+                <li><a href="#" target="_blank">####</a></li>
+            </ul>
+            <h1 id="titulo">Lista de processos Aguardando AR do Controle Urbano</h1>
+        </nav>
 
-        <span id="resultado"></span>
+        
+        <div id="agrupar_div">
+            <form id="form_agrupamento">
+                <p id="paragrafo">Pesquise abaixo o auto desejado.</p>
+                <input type="text" name="valor_digitado" id="valor_digitado" placeholder="Auto">
+                <br>
+                <button type="submit" value="Enviar" id="botao_confirma" onclick="receberDado()">Enviar</button>
+                
+                <div id="div_span">
+                <span id="resultado">Resultado será mostrado aqui.</span>
+                </div>
+            </form>
+        </div>
 
       <script src="/js/main.js"></script>
       

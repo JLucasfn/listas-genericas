@@ -20,20 +20,20 @@ function receberDado() {
     if (valor === listaRecA.find(itemLista => itemLista == valor)){
         let resultado = "Lista A";
         let posicao = listaRecA.indexOf(valor) + 1;
-        document.getElementById("resultado").innerHTML = "<p>" + resultado + "</p>" + 
-        "\nSe encontra na posição: "+ posicao +"º da lista";
+        document.getElementById("resultado").innerHTML = "<p>O auto: " + valor + "</p>" + 
+        "\nSe encontra na posição: "+ posicao +" da " + resultado;
     }
 
     else if (valor === listaRecB.find(itemLista => itemLista == valor)){
         let resultado = "Lista B";
         let posicao = listaRecB.indexOf(valor) + 1;
-        document.getElementById("resultado").innerHTML = "<p>" + resultado + "</p>" + 
-        "\nSe encontra na posição: "+ posicao +"º da lista";
+        document.getElementById("resultado").innerHTML = "<p>O auto: " + valor + "</p>" + 
+        "\nSe encontra na posição: "+ posicao +" da " + resultado;
     }
 
     else {
-        let resultado = "Nenhuma lista";
-        document.getElementById("resultado").innerHTML = "<p>" + resultado + "</p>";
+        let resultado = " não foi encontrado em nenhuma lista.";
+        document.getElementById("resultado").innerHTML = "<p>O auto: " + valor + resultado + "</p>";
     }
 
 }
