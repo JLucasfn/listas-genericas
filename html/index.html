@@ -8,15 +8,18 @@
         <title>Teste</title>
     </head>
     <body>
-        <nav>
-            <ul id="lista_nav">
-                <li><a href="#"target="_blank">Home</a></li>
-                <li><a href="#"target="_blank">####</a></li>
-                <li><a href="#" target="_blank">####</a></li>
-            </ul>
-            <h1 id="titulo">Lista de processos Aguardando AR do Controle Urbano</h1>
-        </nav>
-
+        <header>
+            <nav>
+                <ul class="lista_nav">
+                    <li><a href="#"target="_blank">Home</a></li>
+                </ul>
+                <ul class="lista_nav" id="lista_nav_direita">
+                    <li><a href="#"target="_blank">Voltar</a></li>
+                    <li><a href="#" target="_blank">Avançar</a></li>
+                </ul>
+                <h1 id="titulo">Lista de processos Aguardando AR do Controle Urbano</h1>
+            </nav>
+        </header>
         
         <div id="agrupar_div">
             <form id="form_agrupamento">
@@ -26,7 +29,7 @@
                 <button type="submit" value="Enviar" id="botao_confirma" onclick="receberDado()">Enviar</button>
                 
                 <div id="div_span">
-                <span id="resultado">Resultado será mostrado aqui.</span>
+                <span id="resultado">O resultado será mostrado aqui.</span>
                 </div>
             </form>
         </div>

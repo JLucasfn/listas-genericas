@@ -21,23 +21,23 @@ function receberDado() {
         let resultado = "Lista A";
         let posicao = listaRecA.indexOf(valor) + 1;
         document.getElementById("resultado").innerHTML = "<p>O auto: " + valor + "</p>" + 
-        "\nSe encontra na posição: "+ posicao +" da " + resultado;
+        "Se encontra na posição "+ posicao +" da lista A";
     }
 
     else if (valor === listaRecB.find(itemLista => itemLista == valor)){
-        let resultado = "Lista B";
         let posicao = listaRecB.indexOf(valor) + 1;
         document.getElementById("resultado").innerHTML = "<p>O auto: " + valor + "</p>" + 
-        "\nSe encontra na posição: "+ posicao +" da " + resultado;
+        "Se encontra na posição "+ posicao +" da lista B";
     }
 
     else {
-        let resultado = " não foi encontrado em nenhuma lista.";
-        document.getElementById("resultado").innerHTML = "<p>O auto: " + valor + resultado + "</p>";
+        document.getElementById("resultado").innerHTML = "<p>O auto: " + valor + "</p>" + "Não foi encontrado em nenhuma lista." ;
     }
 
 }
 
+let autosProcurados = []
+let autosAchados = []
 let listaRecA = listaA();
 let listaRecB = listaB();
 
