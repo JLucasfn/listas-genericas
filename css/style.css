@@ -37,18 +37,20 @@ body{
 
 nav {
     background-color: var(--cor_divs);
-    padding-bottom: 30px;
+    padding-bottom: 8px;
 }
 
 .lista_nav {
+    display: inline-flex;
     margin: 0 10px 0 10px;
     padding-top: 10px;
-    display: inline-flex;
-    }
+}
 
 .lista_nav > li {
-    background-color: var(--cor_dos_botoes);
     display: inline;
+    padding-bottom: 3px;
+    border-radius: 3px;
+    background-color: var(--cor_dos_botoes);
 }
 
 .lista_nav > li > a {
@@ -60,6 +62,19 @@ nav {
 .lista_nav > li > a:hover {
     background: rgb(253, 123, 123);
     transition-duration: 2s;
+    text-decoration: underline;
+}
+
+nav > img {
+    padding-top: 10px;
+    width: 128px;
+    height: 64px;
+}
+
+#lista_nav_esquerda {
+    position: absolute;
+    left: 0;
+    display: inline-block;
 }
 
 #lista_nav_direita {
@@ -68,12 +83,20 @@ nav {
     display: inline-block;
 }
 
+#titulo {
+    padding-top: 8px;
+    text-align: center;
+    font-family: var(--fonte);
+    color: var(--cor_titulo);
+    margin: 0 auto;
+}
+
 #agrupar_div {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 85vh;
+    height: 80vh;
 }
 
 #form_agrupamento {
@@ -82,19 +105,16 @@ nav {
     height: 250px;
 }
 
-#titulo {
-    text-align: center;
-    font-family: var(--fonte);
-    color: var(--cor_titulo);
-    margin: 0 auto;
-}
-
-#paragrafo {
+.paragrafo {
     padding-top: 15px;
-    margin-bottom: 6px;
     font-family: var(--fonte);
     color: var(--cor_paragrafo);
 
+}
+
+#paragrafo2 {
+    padding-top: 6px;
+    margin-bottom: 6px;
 }
 
 input {
@@ -129,8 +149,8 @@ input {
 #div_span {
     display: flexbox;
     margin-top: 20px;
-    padding-top: 30px;
-    padding-bottom: 27px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: var(--cor_divs);
     font-family: var(--fonte);
     color: var(--cor_restantes);
