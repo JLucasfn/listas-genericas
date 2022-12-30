@@ -1,9 +1,8 @@
 function receberDado() {
 
-    //Declaração de variaveis
+    //Declaração de variaveis da função
     let receber = document.querySelector("#valor_digitado");
     let valor = parseInt(receber.value);
-    console.log(valor);
 
     //Eventos
     //Evento obsoleto, trocar posteriormente.
@@ -44,19 +43,19 @@ function receberDado() {
     }
 
 }
-
+//Variaveis globais
 let autosNaoAchados = [];
 let autosAchados = [];
 let listaRecA = listaA();
 let listaRecB = listaB();
 
+//Funções para as listas
 function listaA(){
-    let lista = [1,2,3,4,5];
+    let lista = [1,2,3];
      return lista;
  }
  
 function listaB(){
-     let lista = [6,7,8,9,10];
+     let lista = [4,5,6];
      return lista;
  }
- 

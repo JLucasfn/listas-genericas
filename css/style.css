@@ -155,3 +155,19 @@ input {
     font-family: var(--fonte);
     color: var(--cor_restantes);
 }
+
+#rodape {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 5px 10px 5px 0;
+    background-color: var(--cor_divs);
+    color: var(--cor_restantes);
+}
+
+#rodape > small {
+    font-family: var(--fonte);
+    font-size: 0.8em;
+}
