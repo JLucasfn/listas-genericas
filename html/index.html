@@ -25,17 +25,22 @@
                 <p class="paragrafo">Pesquise abaixo o auto desejado.</p>
                 <p class="paragrafo" id="paragrafo2">Digite 0 para mostrar os resultados.</p>
                 <input type="text" name="valor_digitado" id="valor_digitado" placeholder="Auto">
+
                 <br>
-                <button type="submit" value="Enviar" id="botao_confirma" onclick="receberDado()">Enviar</button>
-                
+
+                <button type="submit" value="Enviar" class="botao_confirma" onclick="receberDado()">Pesquisar</button>
+                <button class="botao_confirma" onclick="gerarPDF()">Baixar</button>
+
                 <div id="div_span">
-                    <span id="resultado">O resultado será mostrado aqui.</span>
+                    <span id="resultado">O resultado será mostrado aqui. <p>Ao finalizar, baixe o PDF para controle interno.</p></span>
                 </div>
             </form>
         </div>
         <footer id="rodape"><small>João Lucas | JAP © Todos os direitos reservados.</small></footer>
 
-      <script src="../js/main.js"></script>
-      
+        <script src="../js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" 
+        integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+
     </body>
 </html>

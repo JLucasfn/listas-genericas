@@ -134,7 +134,7 @@ input {
     text-align: center;
 }
 
-#botao_confirma {
+.botao_confirma {
     margin-top: 10px;
     background: var(--cor_dos_botoes);
 	color: white;
@@ -144,11 +144,13 @@ input {
 	font-family: var(--fonte);
 }
 
-#botao_confirma:hover {
+.botao_confirma:hover {
+    background: rgb(253, 123, 123);
 	border: 1px solid #eee;
+    text-decoration: underline;
 }
 
-#botao_confirma:active {
+.botao_confirma:active {
     background: #B5DEFF;
 }
 
