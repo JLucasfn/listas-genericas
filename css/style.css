@@ -106,9 +106,14 @@ nav > img {
 }
 
 #form_agrupamento {
+    display: inline-table;
     background-color: #686868;
     width: 370px;
     height: 250px;
+}
+
+#form_agrupamento > input {
+    margin: auto;
 }
 
 .paragrafo {
@@ -124,6 +129,7 @@ nav > img {
 }
 
 input {
+    display: block;
     margin: 6px;
     height: 23px;
     border-style: none;
@@ -135,6 +141,7 @@ input {
 }
 
 .botao_confirma {
+    display: inline;
     margin-top: 10px;
     background: var(--cor_dos_botoes);
 	color: white;
@@ -145,6 +152,7 @@ input {
 }
 
 .botao_confirma:hover {
+    cursor: pointer;
     background: rgb(253, 123, 123);
 	border: 1px solid #eee;
     text-decoration: underline;
@@ -158,7 +166,7 @@ input {
     display: flexbox;
     margin-top: 20px;
     padding-top: 10px;
-    padding-bottom: 22.2px;
+    padding-bottom: 35px;
     background-color: var(--cor_divs);
     font-family: var(--fonte);
     color: var(--cor_restantes);
