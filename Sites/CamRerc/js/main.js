@@ -16,12 +16,7 @@ function receberDado() {
     });
 
     //Condições
-    if (valor === 0){
-        document.getElementById("resultado").innerHTML = "<p>" + "Autos achados: " + autosAchados + "</p>" +
-        "<p>" + "Autos não achados: " + autosNaoAchados + "</p>"
-    }
-
-    else if (valor === listaRecA.find(itemLista => itemLista == valor)){
+    if (valor === listaRecA.find(itemLista => itemLista == valor)){
         let posicao = listaRecA.indexOf(valor) + 1;
         autosAchados.push(valor);
         document.getElementById("resultado").innerHTML = "<p>O auto: " + valor + "</p>" + 
@@ -229,10 +224,11 @@ function gerarPDF(){
         fontSize = 12,
         ptsPerInch = 72,
         oneLineHeight = (fontSize * lineHeight) / ptsPerInch,
-        text = date + ".\n\n" +
-        "Salvar este arquivo na pasta AR´s procurados.\n\n" +
-        "Os autos achados foram: " + autosAchados + "\n\n" +
-        "Os autos procurados foram: " + autosNaoAchados
+        text = `${date}.\n\nSalvar este arquivo na pasta AR´s procurados.
+        \n\nOs autos achados foram: ${autosAchados},
+        \n\nVocê achou: ${autosAchados.length} autos,
+        \n\nOs autos procurados foram: ${autosNaoAchados},
+        \n\nVocê procurou: ${autosNaoAchados.length} autos.`
 
     doc = new jsPDF({
         unit: "in",
