@@ -16,6 +16,7 @@
     --cor_divs: #4442427c;
     --cor_dos_inputs: #41373771;
     --cor_dos_botoes: #4fd4ec;
+    --cor_hover_botoes: #7b84fd;
 
     /*Cores das letras*/
     --cor_titulo: #ffffff;
@@ -63,20 +64,15 @@ nav {
 }
 
 .lista_nav > li:hover {
-    background: rgb(74, 113, 196);
+    background: var(--cor_hover_botoes);
     text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 nav > img {
     padding-top: 10px;
     width: 128px;
     height: 64px;
-}
-
-#lista_nav_esquerda {
-    position: absolute;
-    left: 0;
-    display: inline-flex;
 }
 
 #lista_nav_direita {
@@ -114,10 +110,12 @@ nav > img {
 
 #form_agrupamento > input {
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .paragrafo {
     padding-top: 15px;
+    margin-bottom: 15px;
     font-family: var(--fonte);
     color: var(--cor_paragrafo);
 
@@ -153,24 +151,23 @@ input {
 
 .botao_confirma:hover {
     cursor: pointer;
-    background: rgb(74, 113, 196);
+    background: var(--cor_hover_botoes);
 	border: 1px solid #eee;
     text-decoration: underline;
 }
 
 .botao_confirma:active {
-    background: #2c3f4e;
+    background: #B5DEFF;
 }
 
 #div_span {
     display: flexbox;
     margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 35px;
+    padding: 10%;
     background-color: var(--cor_divs);
     font-family: var(--fonte);
     color: var(--cor_restantes);
-    word-break: break-all;
+    word-wrap: break-word;
 }
 
 #rodape {

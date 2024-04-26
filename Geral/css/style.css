@@ -15,7 +15,7 @@
     --cor_background: #2c2c2c;
     --cor_divs: #4442427c;
     --cor_dos_inputs: #41373771;
-    --cor_dos_botoes: #ec9b4f;
+    --cor_dos_botoes: #fcbc04;
 
     /*Cores das letras*/
     --cor_titulo: #ffffff;
@@ -65,28 +65,13 @@ nav {
 .lista_nav > li:hover {
     background: rgb(253, 123, 123);
     text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 nav > img {
     padding-top: 10px;
     width: 128px;
     height: 64px;
-}
-
-#lista_nav_esquerda {
-    position: absolute;
-    left: 0;
-    display: inline-flex;
-}
-
-#lista_nav_direita {
-    position: absolute;
-    right: 0;
-    display: inline-flex;
-}
-
-#lista_nav_direita > li{
-    margin-left: 8px;
 }
 
 #titulo {
@@ -105,72 +90,53 @@ nav > img {
     height: 80vh;
 }
 
-#form_agrupamento {
-    display: inline-table;
+#div_agrupamento {
+    display: block;
     background-color: #686868;
-    width: 370px;
-    height: 250px;
+    width: 500px;
+    height: auto;
 }
 
-#form_agrupamento > input {
-    margin: auto;
+a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+	color: #1a1818;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .paragrafo {
     padding-top: 15px;
+    margin-bottom: 15px;
     font-family: var(--fonte);
     color: var(--cor_paragrafo);
 
 }
 
-#paragrafo2 {
-    padding-top: 6px;
-    margin-bottom: 6px;
-}
-
-input {
-    display: block;
-    margin: 6px;
-    height: 23px;
-    border-style: none;
-    border-radius: 5px;
-    background-color: var(--cor_dos_inputs);
-    color: whitesmoke;
-    transition: 1s;
-    text-align: center;
-}
-
 .botao_confirma {
-    display: inline;
-    margin-top: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background: var(--cor_dos_botoes);
-	color: white;
 	border-style: none;
-	height: 50px;
-	width: 120px;
+	height: 80px;
+	width: 300px;
 	font-family: var(--fonte);
 }
 
 .botao_confirma:hover {
     cursor: pointer;
-    background: rgb(253, 123, 123);
+    background: #eb9b4c;
 	border: 1px solid #eee;
     text-decoration: underline;
 }
 
 .botao_confirma:active {
     background: #B5DEFF;
-}
-
-#div_span {
-    display: flexbox;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 35px;
-    background-color: var(--cor_divs);
-    font-family: var(--fonte);
-    color: var(--cor_restantes);
-    word-break: break-all;
 }
 
 #rodape {
